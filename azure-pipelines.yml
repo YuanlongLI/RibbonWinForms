@@ -1,0 +1,17 @@
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-2019'
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- script: echo Hello, world! I am training IntelliCode team completions!
+  displayName: 'Run a one-line script'
+
+- script: dotnet build --configuration $(buildCongiguration)
+  displayName: 'dotnet build $(buildConfiguration'
