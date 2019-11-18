@@ -13,5 +13,5 @@ steps:
 - script: echo Hello, world! I am training IntelliCode team completions!
   displayName: 'Run a one-line script'
 
-- script: dotnet build --configuration $(buildCongiguration)
+- script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration'
